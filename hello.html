@@ -6,24 +6,29 @@
     <h1>Timezone Converter</h1>
     <h3>Enter Time</h3>
     <div>
-      <input type="text" class="time" />
-        <input list="timezones" name="timezone" class="timezone-input"/>
-        <datalist id="timezones">
-          <option value="IST"></option>
-          <option value="EST"></option>
-          <option value="GMT"></option>
-        </datalist>
+      <input type="text" id="input-timezone" />
     </div>
+    <div class="timezones">
+      <p>From</p>
+      <label for="timezones"></label>
+      <select id="select1" name="timezones">
+        <option value="IST">Indian Standard Time (IST)</option>
+        <option value="EST">Eastern Standard Time (EST)</option>
+        <option value="GMT">Greenwich Mean Time (GMT)</option>
+      </select>
+      <p>to</p>
 
+      <select id="select2" name="timezones">
+        <option value="IST">Indian Standard Time (IST)</option>
+        <option value="EST">Eastern Standard Time (EST)</option>
+        <option value="GMT">Greenwich Mean Time (GMT)</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <button id="btn">Convert</button>
     <h3>Converted Time</h3>
     <div>
-      <input type="text" class="time" />
-        <input list="timezones" name="timezone" class="timezone-input"/>
-        <datalist id="timezones">
-          <option value="IST"></option>
-          <option value="EST"></option>
-          <option value="GMT"></option>
-        </datalist>
+      <div id="output-timezone">New Time</div>
     </div>
     <script src="popup.js"></script>
   </body>
